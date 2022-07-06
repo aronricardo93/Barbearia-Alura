@@ -24,15 +24,38 @@
         <main>
             <form>
                 <label for="nomesobrenome">Nome e sobrenome:</label>
-                <input id="nomesobrenome" type="text">
+                <input id="nomesobrenome" class="input-padrao" type="text" required>
                 
                 <label for="email">E-mail:</label>
-                <input id="email" type="email">
+                <input id="email" class="input-padrao" type="email"placeholder="seuemail@dominio.com" required>
 
                 <label for="telefone">Telefone:</label>
-                <input id="tel" type="tel">
+                <input id="tel" class="input-padrao" type="tel" placeholder="(XX) XXXXX-XXXX" required>
 
-                <input type="submit" value="Enviar formulário">
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" class="input-padrao" cols="70" rows="10" required></textarea>
+
+                <fieldset>
+                    <legend>Como prefere o nosso contato?</legend>
+                    <label for="radio-email"><input id="radio-email" name="contato" type="radio" value="email">E-mail</label>
+                    
+                    <label for="radio-telefone"><input id="radio-telefone" name="contato" type="radio" value="telefone">Telefone</label>
+
+                    <label for="radio-whatsapp"><input id="radio-whatsapp" name="contato" type="radio" value="whatsapp" checked>WhatsApp</label>  
+                </fieldset>  
+
+                <fieldset>
+                    <legend>Qual o horário prefere ser atendido?</legend>
+                    <select>
+                        <option>Manhã</option>
+                        <option>Tarde</option>
+                        <option>Noite</option>
+                    </select>
+                </fieldset>
+
+                <label class="checkbox"><input type="checkbox" checked> Gostaria de receber nossas novidades por e-mail?</label>
+
+                <input class="btn-enviar" type="submit" value="Enviar formulário">
             </form>
         </main>
 
