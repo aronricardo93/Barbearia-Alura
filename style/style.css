@@ -163,6 +163,7 @@ footer{
     text-align: center;
     font-size: 2em;
     margin: 0 0 1em;
+    text-shadow: 3px 3px 10px #000000;
     clear: left;
 }
 
@@ -241,6 +242,15 @@ footer{
 
 .imagem-beneficios{
     width: 59%;
+    box-shadow: 20px 20px 25px 5px #000000; /* X(sombra direita), Y(Sombra embaixo), 
+                                          Z(espalhamento sombra), W(intesidade borda), #(cor sombra) */
+    opacity: 1;
+    transition: 1000ms;
+}
+
+.imagem-beneficios:hover{
+    opacity: 0.7;
+    box-shadow: none;
 }
 
 .video{
